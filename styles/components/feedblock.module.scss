@@ -1,0 +1,48 @@
+@import "./button.module.scss";
+
+.feedBlockContainer {
+    max-width: 250px;
+    min-width: 250px;
+    margin-right: 40px;
+    padding-bottom: 20px;
+}
+
+.feedBlockHeader {
+  @apply flex items-center;
+  margin-bottom: 20px;
+
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+  }
+}
+
+.headerDesc {
+  margin-left: 10px;
+
+  h3, p {
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  p {
+    font-weight: 400;
+    color: var(--c-textGray)
+  }
+}
+
+.contentDesc {
+    margin-top: 20px;
+
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 19px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 12px;
+    }
+}

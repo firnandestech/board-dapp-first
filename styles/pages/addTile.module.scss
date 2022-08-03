@@ -1,0 +1,26 @@
+@import "../components/button.module.scss";
+@import "../components/layout.module.scss";
+
+.addTileHeaderInner {
+  @apply flex justify-between items-center w-full;
+  margin: 60px 0 53px;
+
+  h1 {
+    font-weight: 700;
+    font-size: 48px;
+  }
+
+  p {
+    cursor: pointer;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
+
+.addTileContentInner {
+  @apply grid w-full;
+  grid-template-columns: 22% 40% 30%;
+  gap: 40px;
+}

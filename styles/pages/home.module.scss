@@ -1,0 +1,100 @@
+@import "../components/button.module.scss";
+@import "../components/layout.module.scss";
+
+.informationInner {
+  @apply grid;
+  grid-template-columns: 65% 242px;
+  grid-gap: 120px;
+  padding: 60px 0 50px 0;
+}
+
+.informationDesc {
+  h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 150%;
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: var(--c-textGray);
+  }
+}
+
+.addInfoItem {
+  & > h3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+  }
+}
+
+.addInfoBtn {
+  @include btnPrimary;
+  margin: 39px 0 13px !important;
+}
+
+.priceContainer {
+  @apply flex justify-between;
+
+  & > p {
+    color: var(--c-textGray);
+
+    & b {
+      color: var(--c-primary);
+    }
+  }
+}
+
+.currencyContainer {
+  @apply grid grid-cols-4 gap-1;
+}
+
+.feedBlockSection {
+  @extend .layoutContainer;
+}
+
+.feedBlockInner {
+  @apply flex flex-nowrap overflow-auto;
+  max-width: 90vw;
+}
+
+.newsletterInner {
+  @apply flex justify-between w-full;
+  padding-bottom: 97px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 32px;
+  }
+}
+
+.btnNewsletter {
+  @include btnPrimary;
+  position: absolute;
+  width: 110px;
+  height: 48px;
+  right: 0;
+  top: 0;
+}
+
+.formInput {
+    position: relative;
+
+    input {
+        width: 370px;
+        height: 48px;
+    }
+}
+
+.tyleMonsterInner {
+    position: relative;
+
+    & > span {
+        position: absolute;
+        left: -200px;
+        top: -80px;
+    }
+}
+
+
