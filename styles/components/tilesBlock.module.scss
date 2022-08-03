@@ -1,0 +1,30 @@
+
+.tileBoardsItem {
+  @apply relative;
+  width: 240px;
+  min-width: 240px;
+  max-width: 240px;
+  height: 510px;
+  min-height: 510px;
+  max-height: 510px;
+  z-index: 5;
+}
+
+.tilesImage {
+  @apply absolute cursor-pointer z-10;
+  top: 207px;
+  left: 80px;
+}
+
+.tilesDateContainer {
+  @apply absolute cursor-pointer;
+  top: 20px;
+  left: 110px;
+  z-index: 10;
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #1976D2;
+  }
+}

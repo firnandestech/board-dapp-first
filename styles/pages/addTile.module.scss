@@ -25,11 +25,23 @@
   }
 }
 
+.tylesBoardContainer {
+  margin-left: -20px;
+  margin-top: -14px;
+
+  [class*="tileBoardsItem"] {
+    width: 400px !important;
+    min-width: 400px !important;
+    max-width: 400px !important;
+  }
+}
+
 .addTileContentInner {
   @apply grid w-full;
   grid-template-columns: 22% 40% 30%;
   gap: 40px;
 }
+
 
 .uploadFileContainer, .paymentAndPriceContainer, .tylesContainer, .descriptionContainer {
   h2 {
@@ -40,24 +52,7 @@
   }
 }
 
-.tylesContainer {
-  @apply relative;
-}
 
-.tylesBoard {
-    @apply absolute;
-    top: 12px;
-    left: -20px;
-    width: 280px;
-    max-width: 280px;
-  }
-
-.tylesImage {
-  @apply absolute;
-  @apply z-10;
-  top: 205px;
-  left: 96px;
-}
 
 .openFileBrowserBtn {
   @include btnPrimary;
@@ -207,6 +202,10 @@
 
    & > div {
     padding: 12px 16px;
+
+    &:hover {
+      background: var(--c-lightGray);
+    }
   }
 
 }

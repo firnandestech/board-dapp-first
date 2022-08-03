@@ -100,14 +100,40 @@
     }
 }
 
-.tyleMonsterInner {
-    position: relative;
+.tyleSectionInner {
+  @apply relative w-full;
+  min-height: 900px;
+}
 
-    & > span {
+.tyleMonsterInner {
+    position: absolute;
+    left: -200px;
+    top: 0px;
+    width: 507px;
+    height: 500px;
+
+    & > span:first-child {
+        @apply z-10;
         position: absolute;
-        left: -200px;
+        left: 0;
         top: -80px;
+      }
+      
+    & span:last-child {
+      z-index: 1;
+      position: absolute;
+      left: 0;;
+      top: -1100px;
     }
 }
 
+
+.tileBoardsContainer {
+  @apply flex w-full overflow-auto;
+  z-index: 5;
+  padding: 160px 0 0 40px;
+  width: fit-content;
+  max-width: fit-content;
+  max-width: 90vw;
+}
 

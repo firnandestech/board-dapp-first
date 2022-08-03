@@ -4,8 +4,9 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 
 import Layout from "components/Layout";
+import TilesBlock from "components/TilesBlock";
 
-import styles from "../../styles/pages/addTile.module.scss";
+import styles from "styles/pages/addTile.module.scss";
 
 const AddTile: NextPage = ({ history }: any) => {
   const router = useRouter();
@@ -28,8 +29,9 @@ const AddTile: NextPage = ({ history }: any) => {
         <div className={styles.addTileContentInner}>
           <div className={styles.tylesContainer}>
             <h2>Select Tiles</h2>
-            <img className={styles.tylesBoard} src={"/addTile/tileBoardExample.svg"} height="510" />
-            <img className={styles.tylesImage} src={"/addTile/tileImage.svg"} width="96" height="96" />
+            <div className={styles.tylesBoardContainer}>
+              <TilesBlock />
+            </div>
           </div>
           <div className={styles.InformationContainer}>
             <div className={styles.uploadFileContainer}>

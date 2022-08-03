@@ -4,8 +4,9 @@ import Link from "next/link";
 
 import Layout from "components/Layout";
 import FeedBlock from "components/FeedBlock";
+import TilesBlock from "components/TilesBlock";
 
-import styles from "../styles/pages/home.module.scss";
+import styles from "styles/pages/home.module.scss";
 
 const Home: NextPage = () => {
   return (
@@ -51,12 +52,30 @@ const Home: NextPage = () => {
       </section>
 
       <section className={styles.layoutContainer}>
-        <div className={styles.tyleMonsterInner}>
-          <Image
-            src={"/home/FrontMouthRedMonster.png"}
-            width="507"
-            height="1024"
-          />
+        <div className={styles.tyleSectionInner}>
+          <div className={styles.tyleMonsterInner}>
+            <Image
+              src={"/home/MonsterFrontLayerMin.gif"}
+              alt="loading..."
+              width="507"
+              height="1024"
+            />
+            <Image
+              src={"/home/MonsterBackLayerMin.gif"}
+              alt="loading..."
+              width="507"
+              height="1024"
+            />
+          </div>
+          <div className={styles.tileBoardsContainer}>
+            <TilesBlock />
+            <TilesBlock />
+            <TilesBlock />
+            <TilesBlock />
+            <TilesBlock />
+            <TilesBlock />
+            <TilesBlock />
+          </div>
         </div>
       </section>
 
