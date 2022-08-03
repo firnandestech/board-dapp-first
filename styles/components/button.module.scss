@@ -19,6 +19,15 @@
   display: inline-block;
 
   &:hover {
-    background: var(--c-blue);
+    background: var(--c-white);
   }
+}
+
+@mixin btnIttenary{
+  @apply w-full text-center;
+  background: var(--c-blue);
+  border-radius: 4px;
+  color: var(--c-white);
+  border: 1px solid var(--c-blue);
+  display: inline-block;
 }

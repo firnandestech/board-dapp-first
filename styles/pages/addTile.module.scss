@@ -4,17 +4,23 @@
 .addTileHeaderInner {
   @apply flex justify-between items-center w-full;
   margin: 60px 0 53px;
-
+  color: var(--c-primary);
+  
   h1 {
     font-weight: 700;
     font-size: 48px;
   }
 
   p {
-    cursor: pointer;
+    @apply flex items-center cursor-pointer font-bold;
+    color: #909090;
 
     &:hover {
       opacity: .5;
+    }
+
+    img {
+      @apply mr-2;
     }
   }
 }
@@ -23,4 +29,177 @@
   @apply grid w-full;
   grid-template-columns: 22% 40% 30%;
   gap: 40px;
+}
+
+.uploadFileContainer, .paymentAndPriceContainer, .tylesContainer, .descriptionContainer {
+  h2 {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 9px;
+  }
+}
+
+.tylesContainer {
+  @apply relative;
+
+  img {
+    @apply absolute;
+    top: 12px;
+    left: -20px;
+    width: 280px;
+    max-width: 280px;
+  }
+}
+
+.openFileBrowserBtn {
+  @include btnPrimary;
+  width: 233px;
+  font-weight: 400;
+}
+
+.uploadFileInputBox {
+  @apply cursor-pointer;
+  background: #EDEDED;
+  border: 1px solid #909090;
+  border-radius: 4px;
+  padding: 30px 60px 27px;
+  text-align: center;
+  opacity: .8;
+  margin-bottom: 30px;
+
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #909090;
+    margin-bottom: 10px;
+  }
+
+  input {
+    border-bottom: none
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.orText {
+  margin-bottom: 11px;
+  color: #909090;
+}
+
+.openFileBrowserContainer {
+  @apply relative cursor-pointer;
+  @apply w-fit mx-auto mb-5;
+
+
+  input {
+    @apply w-full absolute top-0 left-0 cursor-pointer;
+    z-index: 2;
+    visibility: 0;
+    opacity: 0;
+  }
+}
+
+.actionButtonContainer {
+  @apply grid grid-cols-2;
+  gap: 14px;
+}
+
+.resetBtn {
+  @include btnSecondary;
+}
+
+.saveBtn {
+  @include btnPrimary;
+}
+
+.sizeRules {
+  @apply mx-auto;
+  font-size: 14px;
+  color: #909090;
+  font-weight: 700;
+  width: 180px;
+}
+
+.checkoutContainer {
+  p {
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
+
+.descriptionInpuTextarea {
+  min-height: 130px;
+}
+
+.blockChainCurrencyContainer {
+  @apply flex items-center;
+}
+
+.total {
+  color: var(--c-primary) !important;
+  font-weight: 700 !important;
+  font-size: 48px !important;
+  margin-right: 20px;
+}
+
+.payAndUploadBtn {
+  @include btnIttenary;
+  font-weight: 400;
+  height: 36px;
+  margin-top: 12px;
+}
+
+.currencyItemContainer {
+ & > div {
+  padding: 12px 16px;
+ }
+}
+
+
+.inputSelect {
+  @apply flex flex-col relative;
+  cursor: pointer;
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  [class$="true"] {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+  }
+
+  img {
+    @apply absolute right-8 top-4 z-10;
+    -webkit-transform:rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    cursor: pointer;
+  }
+}
+
+.shadowSelect {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+
+  & > div {
+    padding: 12px 16px;
+  }
+}
+
+.dropDownContainer {
+  @apply absolute w-full;
+  padding: 0 !important;
+  top: 0;
+  background: var(--c-white);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+
+   & > div {
+    padding: 12px 16px;
+  }
+
 }

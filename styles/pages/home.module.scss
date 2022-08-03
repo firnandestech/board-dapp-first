@@ -63,6 +63,19 @@
   @apply flex justify-between w-full;
   padding-bottom: 97px;
 
+  input {
+    min-height: 48px;
+    background: #F9F9F9;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    padding: 0 23px;
+
+    &:focus {
+      border: none;
+      outline: 0;
+    }
+  }
+
   h2 {
     font-weight: 700;
     font-size: 32px;

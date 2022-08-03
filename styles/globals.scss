@@ -33,16 +33,17 @@ section {
       color: var(--c-primary)
     }
 
-    input {
-      min-height: 48px;
-      background: #F9F9F9;
-      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
-      border-radius: 4px;
-      padding: 0 23px;
+    input, textarea {
+      @apply w-full;
+      border-bottom: 1px solid var(--c-primary);
+      padding: 5px 0;
+      margin-bottom: 30px;
 
+      
       &:focus {
         border: none;
         outline: 0;
+        border-bottom: 1px solid var(--c-primary);
       }
     }
   }
