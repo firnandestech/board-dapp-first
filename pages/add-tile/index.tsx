@@ -28,7 +28,8 @@ const AddTile: NextPage = ({ history }: any) => {
         <div className={styles.addTileContentInner}>
           <div className={styles.tylesContainer}>
             <h2>Select Tiles</h2>
-            <img src={"/addTile/tileBoardExample.svg"} height="510" />
+            <img className={styles.tylesBoard} src={"/addTile/tileBoardExample.svg"} height="510" />
+            <img className={styles.tylesImage} src={"/addTile/tileImage.svg"} width="96" height="96" />
           </div>
           <div className={styles.InformationContainer}>
             <div className={styles.uploadFileContainer}>
@@ -98,7 +99,7 @@ const AddTile: NextPage = ({ history }: any) => {
                   </div>
                   {openSelect && (
                     <div className={styles.dropDownContainer}>
-                        <div>
+                      <div>
                         <p>Choose Currency</p>
                       </div>
                       <div>

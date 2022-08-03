@@ -42,14 +42,21 @@
 
 .tylesContainer {
   @apply relative;
+}
 
-  img {
+.tylesBoard {
     @apply absolute;
     top: 12px;
     left: -20px;
     width: 280px;
     max-width: 280px;
   }
+
+.tylesImage {
+  @apply absolute;
+  @apply z-10;
+  top: 205px;
+  left: 96px;
 }
 
 .openFileBrowserBtn {
